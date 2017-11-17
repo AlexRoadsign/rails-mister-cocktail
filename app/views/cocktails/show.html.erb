@@ -4,7 +4,11 @@
   <strong>Name:</strong>
   <%= @cocktail.name %>
 </p>
+<p><strong>Descritpion:</strong>
+  <%= @cocktail.description %>
+</p>
 
 <%= link_to 'Edit', edit_cocktail_path(@cocktail) %> |
-<%= link_to 'Back', cocktails_path %>
+<%= link_to 'Back', cocktails_path %> |
+<%= link_to 'Add a dose', new_cocktail_dose_path(@cocktail) %>
 

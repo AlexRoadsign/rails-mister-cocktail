@@ -17,12 +17,12 @@ ActiveRecord::Schema.define(version: 20171116133211) do
 
   create_table "cocktails", force: :cascade do |t|
     t.string   "name"
+    t.string   "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "doses", force: :cascade do |t|
-    t.string   "description"
     t.integer  "cocktail_id"
     t.integer  "ingredient_id"
     t.datetime "created_at",    null: false
